@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MERN Stack Developer | Portfolio</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav>
+        <div class="nav-container">
+            <a href="#" class="logo">
+                <i class="fas fa-code"></i>
+                Dev<span>AMJAD</span>
+            </a>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-container">
+            <!-- Profile with Social Links -->
+            <div class="profile-section">
+                <div class="profile-container">
+                    <!-- Orbiting MERN Icons -->
+                    <div class="orbit-ring orbit-ring-1">
+                        <div class="orbit-icon mongo"><i class="fas fa-leaf"></i></div>
+                        <div class="orbit-icon express"><i class="fas fa-server"></i></div>
+                    </div>
+                    <div class="orbit-ring orbit-ring-2">
+                        <div class="orbit-icon react"><i class="fab fa-react"></i></div>
+                        <div class="orbit-icon node"><i class="fab fa-node"></i></div>
+                    </div>
+                    
+                    <!-- Your Profile Photo -->
+                    <img src="profile.jpeg" 
+                         alt="Amjad Ali" 
+                         class="profile-photo"
+                         id="profilePhoto">
+                </div>
+                
+                <!-- Social Media Links -->
+                <!-- <div class="social-links-hero">
+                    <a href="https://github.com/yourusername" target="_blank" class="social-btn github" title="GitHub">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://linkedin.com/in/yourusername" target="_blank" class="social-btn linkedin" title="LinkedIn">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                    <a href="https://twitter.com/yourusername" target="_blank" class="social-btn twitter" title="Twitter">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="https://instagram.com/yourusername" target="_blank" class="social-btn instagram" title="Instagram">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="https://youtube.com/yourchannel" target="_blank" class="social-btn youtube" title="YouTube">
+                        <i class="fab fa-youtube"></i>
+                    </a>
+                </div> -->
+            </div>
+            
+            <div class="hero-content">
+                <h1>Hi, I'm <span class="name">Amjad Ali</span></h1>
+                <div class="title">&lt;Full Stack MERN Developer /&gt;</div>
+                <p>I build scalable web applications using MongoDB, Express.js, React, and Node.js. Passionate about creating efficient, user-friendly solutions.</p>
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn btn-primary">
+                        <i class="fas fa-rocket"></i> View Projects
+                    </a>
+                    <a href="#contact" class="btn btn-secondary">
+                        <i class="fas fa-envelope"></i> Contact Me
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="container">
+            <div class="section-title fade-in">
+                <h2>About Me</h2>
+                <p>MERN Stack Specialist</p>
+                <div class="line"></div>
+            </div>
+            <div class="about-grid">
+                <div class="about-photo-container fade-in">
+                    <!-- About Section Photo -->
+                    <img src="profile.jpeg" 
+                         alt="Working Photo" 
+                         class="about-photo">
+                </div>
+                <div class="about-content fade-in">
+                    <h3>Who I Am</h3>
+                    <p>I am a Full Stack Developer specializing in the MERN stack. I create end-to-end web applications with modern JavaScript technologies. From database design with MongoDB to interactive React frontends, I handle every layer of development.</p>
+                    <p>I enjoy solving complex problems and building scalable solutions that make a difference. Constantly learning and exploring new technologies to stay ahead in the fast-evolving web development landscape.</p>
+                    
+                    <div class="mern-stack">
+                        <div class="mern-item mongo">
+                            <i class="fas fa-leaf"></i>
+                            <span>MongoDB</span>
+                        </div>
+                        <div class="mern-item express">
+                            <i class="fas fa-server"></i>
+                            <span>Express</span>
+                        </div>
+                        <div class="mern-item react">
+                            <i class="fab fa-react"></i>
+                            <span>React</span>
+                        </div>
+                        <div class="mern-item node">
+                            <i class="fab fa-node"></i>
+                            <span>Node.js</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="skills" id="skills">
+        <div class="container">
+            <div class="section-title fade-in">
+                <h2>Technical Skills</h2>
+                <p>My MERN Stack Expertise</p>
+                <div class="line"></div>
+            </div>
+            <div class="skills-grid">
+                <div class="skill-card fade-in">
+                    <div class="skill-header">
+                        <div class="skill-icon mongo"><i class="fas fa-leaf"></i></div>
+                        <h3>MongoDB</h3>
+                    </div>
+                    <p>Database design, Mongoose ODM, aggregation pipelines</p>
+                    <div class="skill-bar">
+                        <div class="skill-progress mongo" style="width: 90%"></div>
+                    </div>
+                </div>
+                <div class="skill-card fade-in">
+                    <div class="skill-header">
+                        <div class="skill-icon express"><i class="fas fa-server"></i></div>
+                        <h3>Express.js</h3>
+                    </div>
+                    <p>REST APIs, middleware, authentication, routing</p>
+                    <div class="skill-bar">
+                        <div class="skill-progress express" style="width: 85%"></div>
+                    </div>
+                </div>
+                <div class="skill-card fade-in">
+                    <div class="skill-header">
+                        <div class="skill-icon react"><i class="fab fa-react"></i></div>
+                        <h3>React</h3>
+                    </div>
+                    <p>Hooks, Redux, Context API, Next.js</p>
+                    <div class="skill-bar">
+                        <div class="skill-progress react" style="width: 92%"></div>
+                    </div>
+                </div>
+                <div class="skill-card fade-in">
+                    <div class="skill-header">
+                        <div class="skill-icon node"><i class="fab fa-node"></i></div>
+                        <h3>Node.js</h3>
+                    </div>
+                    <p>Event loop, streams, async programming, npm</p>
+                    <div class="skill-bar">
+                        <div class="skill-progress node" style="width: 88%"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="projects" id="projects">
+        <div class="container">
+            <div class="section-title fade-in">
+                <h2>Featured Projects</h2>
+                <p>Built with MERN Stack</p>
+                <div class="line"></div>
+            </div>
+            <div class="projects-grid">
+                <div class="project-card fade-in">
+                    <div class="project-header">
+                        <div class="project-icon">🛒</div>
+                    </div>
+                    <div class="project-content">
+                        <h3>E-Commerce Platform</h3>
+                        <p>Full-featured online store with payment integration, admin dashboard, and inventory management.</p>
+                        <div class="tech-stack">
+                            <span class="tech-tag">MongoDB</span>
+                            <span class="tech-tag">Express</span>
+                            <span class="tech-tag">React</span>
+                            <span class="tech-tag">Node.js</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card fade-in">
+                    <div class="project-header">
+                        <div class="project-icon">💬</div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Real-Time Chat App</h3>
+                        <p>Socket.io based messaging platform with group chats, file sharing, and read receipts.</p>
+                        <div class="tech-stack">
+                            <span class="tech-tag">Socket.io</span>
+                            <span class="tech-tag">MongoDB</span>
+                            <span class="tech-tag">React</span>
+                            <span class="tech-tag">Node.js</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card fade-in">
+                    <div class="project-header">
+                        <div class="project-icon">📊</div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Task Management System</h3>
+                        <p>Collaborative project management tool with real-time updates and team analytics.</p>
+                        <div class="tech-stack">
+                            <span class="tech-tag">MongoDB</span>
+                            <span class="tech-tag">Express</span>
+                            <span class="tech-tag">React</span>
+                            <span class="tech-tag">Redux</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="section-title fade-in">
+                <h2>Get In Touch</h2>
+                <p>Let's build something together</p>
+                <div class="line"></div>
+            </div>
+            <div class="contact-grid">
+                <div class="contact-info fade-in">
+                    <h3>Contact Information</h3>
+                    <p>Available for freelance projects and full-time opportunities. Connect with me on social media or send a message.</p>
+                    
+                    <div class="contact-links">
+                        <a href="amjadalicareer@gmail.com" class="contact-link">
+                            <i class="fas fa-envelope"></i>
+                            <span>amjadalicareer@gmail.com</span>
+                        </a>
+                        <a href="tel:+919876543210" class="contact-link">
+                            <i class="fas fa-phone"></i>
+                            <span>+91 9369213770</span>
+                        </a>
+                        <a href="https://yourwebsite.com" target="_blank" class="contact-link">
+                            <i class="fas fa-globe"></i>
+                            <span>www.yourwebsite.com</span>
+                        </a>
+                    </div>
+                    
+                    <!-- Social Links in Contact -->
+                    <!-- <div class="social-contact">
+                        <a href="https://github.com/yourusername" target="_blank" class="github" title="GitHub">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="https://linkedin.com/in/yourusername" target="_blank" class="linkedin" title="LinkedIn">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="https://twitter.com/yourusername" target="_blank" class="twitter" title="Twitter">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="https://instagram.com/yourusername" target="_blank" class="instagram" title="Instagram">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </div> -->
+                </div>
+                <div class="contact-form fade-in">
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" required></textarea>
+                        </div>
+                        <button type="submit" class="btn-submit">
+                            <i class="fas fa-paper-plane"></i> Send Message
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <!-- Footer Social Links -->
+        <div class="footer-social">
+            <a href="https://github.com/amjad-codes" target="_blank" class="github" title="GitHub">
+                <i class="fab fa-github"></i>
+            </a>
+            <a href="https://linkedin.com/in/amjad ali" target="_blank" class="linkedin" title="LinkedIn">
+                <i class="fab fa-linkedin-in"></i>
+            </a>
+            <a href="https://twitter.com/yourusername" target="_blank" class="twitter" title="Twitter">
+                <i class="fab fa-twitter"></i>
+            </a>
+            <a href="https://instagram.com/yourusername" target="_blank" class="instagram" title="Instagram">
+                <i class="fab fa-instagram"></i>
+            </a>
+            <a href="https://whatsapp.com/dl/" target="_blank" class="whatsapp" title="Whatsapp">
+                <i class="fab fa-whatsapp"></i>
+            </a>
+            <a href="#" target="_blank" class="facebook" title="Facebook">
+                <i class="fab fa-facebook"></i>
+            </a>
+        </div>
+        
+        <div class="footer-mern">
+            <span>M</span>
+            <span>E</span>
+            <span>R</span>
+            <span>N</span>
+        </div>
+        <p>&copy; 2026 Amjad Ali |  Built with MongoDB, Express, React & Node.js</p>
+    </footer>
+    <script src="script.js"></script>
+ 
+
+</body>
+</html>
