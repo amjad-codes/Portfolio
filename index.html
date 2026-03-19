@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amjad Ali - Portfolio</title>
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- ==========================================
+         NAVIGATION
+         ========================================== -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#" class="logo">amjad-codes</a>
+            
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#education" class="nav-link">Education</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+                <li>
+                    <button class="theme-toggle" id="themeToggle">
+                        <i class="fas fa-sun sun-icon"></i>
+                        <i class="fas fa-moon moon-icon"></i>
+                    </button>
+                </li>
+            </ul>
+
+            <button class="mobile-menu-btn" id="mobileMenuBtn">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </nav>
+
+    <!-- ==========================================
+         HERO SECTION
+         ========================================== -->
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <div class="profile-img-container">
+                <img src="profileImg.jpeg" alt="Amjad Ali Profile" class="profile-img">
+                <div class="online-badge"></div>
+            </div>
+
+            <h1 class="hero-title">
+                Hi, I'm <span class="gradient-text">Amjad Ali</span>
+            </h1>
+            <p class="hero-subtitle">Full Stack Developer</p>
+            <p class="hero-tagline">
+                Building digital experiences that matter. Passionate about creating elegant solutions to complex problems.
+            </p>
+
+            <div class="hero-buttons">
+                <a href="#projects" class="btn btn-primary">
+                    <i class="fas fa-eye"></i> View Projects
+                </a>
+                <a href="#contact" class="btn btn-secondary">
+                    <i class="fas fa-envelope"></i> Contact Me
+                </a>
+            </div>
+
+            <div class="social-links">
+                <a href="https://github.com/amjad-codes" target="_blank" class="social-link">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/amjad-ali-b815273a6/" target="_blank" class="social-link">
+                    <i class="fab fa-linkedin-in"></i>
+                </a>
+                <a href="https://twitter.com" target="_blank" class="social-link">
+                    <i class="fab fa-twitter"></i>
+                </a>
+            </div>
+        </div>
+
+        <div class="scroll-down">
+            <a href="#about"><i class="fas fa-chevron-down"></i></a>
+        </div>
+    </section>
+
+    <!-- ==========================================
+         ABOUT SECTION
+         ========================================== -->
+    <section class="about" id="about">
+        <div class="container">
+            <div class="about-grid">
+                <div class="about-image">
+                    <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=600&h=600&fit=crop" alt="Workspace">
+                </div>
+                
+                <div class="about-content">
+                    <h2>About Me</h2>
+                    <p class="about-text">
+                        I'm a passionate fresher Full Stack Developer with a solid foundation in HTML, CSS, and JavaScript. I enjoy building responsive and user-friendly web interfaces using modern tools and best practices.
+                    </p>
+                    <p class="about-text">
+                        I have also explored frameworks like Bootstrap and Tailwind CSS, which help me create clean and visually appealing designs efficiently. Currently, I am expanding my backend skills by learning Node.js and understanding how server-side applications work.
+                    </p>
+                    <p class="about-text">
+                        My journey in web development started with curiosity about how websites function, and now I am continuously improving my skills by building projects and learning new technologies step by step. I am eager to grow as a developer and contribute to real-world projects.
+                    </p>
+                    
+                    <div class="stats">
+                        <div class="stat-box">
+                            <div class="stat-number">10+</div>
+                            <div class="stat-label">Projects</div>
+                        </div>
+                        <div class="stat-box">
+                            <div class="stat-number">5+</div>
+                            <div class="stat-label">Technologies</div>
+                        </div>
+                        <div class="stat-box">
+                            <div class="stat-number">100%</div>
+                            <div class="stat-label">Commitment</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==========================================
+         SKILLS SECTION
+         ========================================== -->
+    <section class="skills" id="skills">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Skills & Technologies</h2>
+                <p class="section-subtitle">Technologies I work with to bring ideas to life</p>
+            </div>
+
+            <div class="skills-grid">
+                
+                <!-- Skill 1: HTML5 & CSS3 -->
+                <div class="skill-card">
+                    <div class="skill-header">
+                        <div class="skill-icon html">
+                            <i class="fab fa-html5"></i>
+                        </div>
+                        <h3 class="skill-name">HTML5 & CSS3</h3>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-skill="90"></div>
+                    </div>
+                    <p class="skill-desc">Semantic markup, Flexbox, Grid, Animations</p>
+                </div>
+
+                <!-- Skill 2: JavaScript -->
+                <div class="skill-card">
+                    <div class="skill-header">
+                        <div class="skill-icon javascript">
+                            <i class="fab fa-js"></i>
+                        </div>
+                        <h3 class="skill-name">JavaScript</h3>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-skill="75"></div>
+                    </div>
+                    <p class="skill-desc">ES6+, DOM manipulation, Async/Await</p>
+                </div>
+
+                <!-- Skill 3: React.js -->
+                <div class="skill-card">
+                    <div class="skill-header">
+                        <div class="skill-icon react">
+                            <i class="fab fa-react"></i>
+                        </div>
+                        <h3 class="skill-name">React.js</h3>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-skill="10"></div>
+                    </div>
+                    <p class="skill-desc">Hooks, Redux, Context API, Router (Learning...)</p>
+                </div>
+
+                <!-- Skill 4: Express.js -->
+                <div class="skill-card">
+                    <div class="skill-header">
+                        <div class="skill-icon express">
+                            <i class="fab fa-node-js"></i>
+                        </div>
+                        <h3 class="skill-name">Express.js</h3>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-skill="10"></div>
+                    </div>
+                    <p class="skill-desc">Routing, Middleware, REST API, MongoDB Integration (Learning...)</p>
+                </div>
+
+                <!-- Skill 5: Node.js -->
+                <div class="skill-card">
+                    <div class="skill-header">
+                        <div class="skill-icon node">
+                            <i class="fab fa-node"></i>
+                        </div>
+                        <h3 class="skill-name">Node.js</h3>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-skill="15"></div>
+                    </div>
+                    <p class="skill-desc">Express, REST APIs, Middleware (Learning...)</p>
+                </div>
+
+                <!-- Skill 6: MongoDB/SQL -->
+                <div class="skill-card">
+                    <div class="skill-header">
+                        <div class="skill-icon database">
+                            <i class="fas fa-database"></i>
+                        </div>
+                        <h3 class="skill-name">MongoDB/SQL</h3>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-skill="15"></div>
+                    </div>
+                    <p class="skill-desc">Database design, CRUD operations (Learning...)</p>
+                </div>
+
+                <!-- Skill 7: Git & GitHub -->
+                <div class="skill-card">
+                    <div class="skill-header">
+                        <div class="skill-icon git">
+                            <i class="fab fa-git-alt"></i>
+                        </div>
+                        <h3 class="skill-name">Git & GitHub</h3>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-skill="85"></div>
+                    </div>
+                    <p class="skill-desc">Version control, Collaboration</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ==========================================
+         PROJECTS SECTION
+         ========================================== -->
+    <section class="projects" id="projects">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Featured Projects</h2>
+                <p class="section-subtitle">Some of my recent work as a fresher developer</p>
+            </div>
+
+            <div class="projects-grid">
+                
+                <!-- Project 1: E-Commerce Dashboard -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="project-1.png" alt="E-Commerce Dashboard">
+                        <div class="project-overlay">
+                            <a href="https://delightful-taffy-750633.netlify.app/" target="_blank" class="project-link" title="Live Demo">
+                                <i class="fas fa-external-link-alt"></i>
+                            </a>
+                            <a href="https://github.com/amjad-codes/E-commerce-Website.git" target="_blank" class="project-link" title="GitHub">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">E-Commerce Dashboard</h3>
+                        <p class="project-desc">A responsive admin dashboard for managing products, orders, and analytics with real-time data visualization.</p>
+                        <div class="project-tags">
+                            <span class="project-tag">HTML</span>
+                            <span class="project-tag">CSS</span>
+                            <span class="project-tag">JavaScript</span>
+                        </div>
+                        <div class="project-footer">
+                            <a href="https://delightful-taffy-750633.netlify.app/" target="_blank" class="project-demo">Live Demo →</a>
+                            <a href="https://github.com/amjad-codes/E-commerce-Website.git" target="_blank" class="project-github">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2: Task Management App -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?w=600&h=400&fit=crop" alt="Task Management App">
+                        <div class="project-overlay">
+                            <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                            <a href="#" class="project-link"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Task Management App</h3>
+                        <p class="project-desc">A collaborative task management application with drag-and-drop functionality and real-time updates.</p>
+                        <div class="project-tags">
+                            <span class="project-tag">JavaScript</span>
+                            <span class="project-tag">Express</span>
+                            <span class="project-tag">MongoDB</span>
+                        </div>
+                        <div class="project-footer">
+                            <a href="#" class="project-demo">Live Demo →</a>
+                            <a href="#" class="project-github"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 3: Weather Analytics Platform -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=600&h=400&fit=crop" alt="Weather Analytics">
+                        <div class="project-overlay">
+                            <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                            <a href="#" class="project-link"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Weather Analytics Platform</h3>
+                        <p class="project-desc">Real-time weather tracking application with interactive maps, forecast visualization, and location-based alerts.</p>
+                        <div class="project-tags">
+                            <span class="project-tag">React</span>
+                            <span class="project-tag">API</span>
+                            <span class="project-tag">Chart.js</span>
+                        </div>
+                        <div class="project-footer">
+                            <a href="#" class="project-demo">Live Demo →</a>
+                            <a href="#" class="project-github"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="view-more">
+                <a href="https://github.com/amjad-codes" target="_blank" class="btn btn-secondary">
+                    <i class="fab fa-github"></i> View More on GitHub
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==========================================
+         EDUCATION SECTION
+         ========================================== -->
+    <section class="education" id="education">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Education</h2>
+                <p class="section-subtitle">My academic journey</p>
+            </div>
+
+            <div class="timeline">
+                
+                <!-- Education 1: Bachelor -->
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-icon"><i class="fas fa-graduation-cap"></i></div>
+                        <h3 class="timeline-title">Bachelor of Computer Application</h3>
+                        <p class="timeline-subtitle">Computer Science • 2023 - 2026</p>
+                        <p class="timeline-desc">IGNOU<br>Aspiring MERN Stack Developer with focus on web Technologies.</p>
+                    </div>
+                </div>
+
+                <!-- Education 2: Higher Secondary -->
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-icon"><i class="fas fa-school"></i></div>
+                        <h3 class="timeline-title">Higher Secondary</h3>
+                        <p class="timeline-subtitle">Science Stream • 2020 - 2022</p>
+                        <p class="timeline-desc">Satasi Inter College<br>Completed with distinction in Physics, Chemistry, and Mathematics. Percentage: 79%</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ==========================================
+         CONTACT SECTION
+         ========================================== -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Get In Touch</h2>
+                <p class="section-subtitle">Have a project in mind or want to collaborate? Feel free to reach out!</p>
+            </div>
+
+            <div class="contact-grid">
+                
+                <!-- Contact Info -->
+                <div class="contact-info">
+                    
+                    <!-- Email -->
+                    <div class="contact-card">
+                        <div class="contact-icon"><i class="fas fa-envelope"></i></div>
+                        <div class="contact-details">
+                            <h3>Email</h3>
+                            <a href="mailto:amjadalicareer@gmail.com">amjadalicareer@gmail.com</a>
+                        </div>
+                    </div>
+
+                    <!-- LinkedIn -->
+                    <div class="contact-card">
+                        <div class="contact-icon"><i class="fab fa-linkedin"></i></div>
+                        <div class="contact-details">
+                            <h3>LinkedIn</h3>
+                            <a href="https://www.linkedin.com/in/amjad-ali-b815273a6/" target="_blank">linkedin.com/in/amjad-ali</a>
+                        </div>
+                    </div>
+
+                    <!-- GitHub -->
+                    <div class="contact-card">
+                        <div class="contact-icon"><i class="fab fa-github"></i></div>
+                        <div class="contact-details">
+                            <h3>GitHub</h3>
+                            <a href="https://github.com/amjad-codes" target="_blank">github.com/amjad-codes</a>
+                        </div>
+                    </div>
+
+                    <!-- Location -->
+                    <div class="contact-card">
+                        <div class="contact-icon"><i class="fas fa-map-marker-alt"></i></div>
+                        <div class="contact-details">
+                            <h3>Location</h3>
+                            <p>Delhi, India</p>
+                        </div>
+                    </div>
+
+                    <!-- WhatsApp -->
+                    <div class="contact-card">
+                        <div class="contact-icon whatsapp"><i class="fab fa-whatsapp"></i></div>
+                        <div class="contact-details">
+                            <h3>WhatsApp</h3>
+                            <a href="https://wa.me/919369213770" target="_blank">+91 93692 13770</a>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- Contact Form -->
+                <div class="contact-form">
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <label class="form-label">Name</label>
+                            <input type="text" class="form-input" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label">Email</label>
+                            <input type="email" class="form-input" placeholder="your@email.com" required>
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label">Message</label>
+                            <textarea class="form-textarea" placeholder="Your message..." required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary" style="width: 100%;">
+                            <i class="fas fa-paper-plane"></i> Send Message
+                        </button>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ==========================================
+         FOOTER
+         ========================================== -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-brand">amjad-codes</div>
+            <p class="footer-text">Built with passion and coffee ☕</p>
+            
+            <div class="footer-social">
+                <a href="https://github.com/amjad-codes" target="_blank" data-tooltip="GitHub">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/amjad-ali-b815273a6/" target="_blank" data-tooltip="LinkedIn">
+                    <i class="fab fa-linkedin-in"></i>
+                </a>
+                <a href="https://instagram.com/_ryterise" target="_blank" data-tooltip="Instagram">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="https://facebook.com/velnor158" target="_blank" data-tooltip="Facebook">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="https://wa.me/919369213770" target="_blank" data-tooltip="WhatsApp">
+                    <i class="fab fa-whatsapp"></i>
+                </a>
+            </div>
+
+            <p class="footer-copy">© 2026 Amjad Ali. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" id="backToTop">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- ==========================================
+         JAVASCRIPT
+         ========================================== -->
+    <script src="app.js"></script>
+
+</body>
+</html>
